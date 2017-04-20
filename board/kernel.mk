@@ -4,6 +4,10 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
+ifeq ($(TARGET_DEVICE),pollux_windy)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
+
 # Serial console
 BOARD_ENABLE_SERIAL_CONSOLE := false
 ifeq ($(BOARD_ENABLE_SERIAL_CONSOLE),true)
