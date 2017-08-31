@@ -12,3 +12,6 @@ allow system_server sysfs_vibrator:file rw_file_perms;
 # USB sysfs
 allow system_server sysfs_usb_supply:dir search;
 allow system_server sysfs_usb_supply:file r_file_perms;
+
+# Kernel scheduling policy
+allow system_server kernel:process setsched;
