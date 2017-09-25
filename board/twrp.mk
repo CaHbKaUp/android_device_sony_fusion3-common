@@ -21,3 +21,4 @@ TW_NO_EXFAT_FUSE := false
 TW_NO_SCREEN_BLANK := true
 TW_USE_TOOLBOX := false
 TW_NO_USB_STORAGE := false
+TW_NO_LEGACY_PROPS := true
